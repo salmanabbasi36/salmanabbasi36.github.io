@@ -1,0 +1,11 @@
+body{font-family:Georgia, 'Times New Roman', serif;background:#f3f4f6;padding:28px}
+.paper{width:794px;max-width:100%;margin:0 auto;background:#fff;padding:40px 56px;box-shadow:0 8px 30px rgba(2,6,23,0.08)}
+.r-header{display:flex;align-items:baseline;justify-content:space-between}
+.r-header h1{margin:0;font-size:36px}
+.r-sub{color:#6b7280;margin:0}
+.r-section{margin-top:20px}
+.r-section h2{margin:0 0 8px 0;font-size:14px;color:#111}
+.job h3{margin:0}
+.muted{color:#6b7280;font-size:13px}
+.r-footer{margin-top:26px;border-top:1px solid #eee;padding-top:12px;color:#374151}
+a{color:#0b5fff}
