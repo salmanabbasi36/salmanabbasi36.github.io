@@ -1,16 +1,52 @@
 :root{
-  --bg:#f7fafc;
-  --card:#ffffff;
+  --bg:#f4f6f8;
+  --paper:#ffffff;
   --accent:#0b5fff;
   --muted:#6b7280;
+  --text:#111827;
+  --max-width:1100px;
 }
 *{box-sizing:border-box}
-body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#111;margin:0;padding:24px}
-.container{max-width:760px;margin:32px auto;padding:28px;background:var(--card);border-radius:10px;box-shadow:0 6px 20px rgba(15,23,42,0.06)}
-header h1{margin:0;font-size:28px}
-.subtitle{color:var(--muted);margin-top:6px}
-.section{margin-top:22px}
-.section h2{margin:0 0 8px 0;font-size:16px}
+body{font-family:Inter,Segoe UI,system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:0}
+.wrap{max-width:var(--max-width);margin:0 auto;padding:28px}
+.site-header{background:none;border-bottom:1px solid rgba(15,23,42,0.04)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between}
+.name{font-weight:700;font-size:20px}
+.top-nav a{margin-left:14px;color:var(--muted);text-decoration:none}
+
+.resume{display:grid;grid-template-columns:320px 1fr;gap:24px;padding:32px 28px}
+.col{min-height:200px}
+.card{background:var(--paper);padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(15,23,42,0.04)}
+.col-left .card{margin-bottom:16px}
+h1, h2, h3, h4{margin:0}
+.name{font-size:24px}
 .muted{color:var(--muted);font-size:13px}
-.footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
-a{color:var(--accent);text-decoration:none}
+
+.contact a{color:var(--accent)}
+.skill-list{list-style:none;padding:0;margin:8px 0}
+.skill-list li{display:inline-block;background:#eef2ff;color:#0b3bff;padding:6px 10px;border-radius:6px;margin:6px 6px 0 0;font-size:13px}
+
+.job{margin-top:12px}
+.job h3{font-size:16px}
+.job p{margin:8px 0 0 0}
+
+.actions{display:flex;gap:12px;align-items:center}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(11,95,255,0.12)}
+
+.site-footer{padding:18px 0;border-top:1px solid rgba(15,23,42,0.04);text-align:center;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .resume{grid-template-columns:1fr;}
+  .wrap{padding:20px}
+}
+
+/* Print styles: optimize for PDF/printing */
+@media print{
+  body{background:white}
+  .site-header, .site-footer, .actions{display:none}
+  .wrap{padding:0}
+  .card{box-shadow:none;border-radius:0;padding:4px}
+  .resume{grid-template-columns:1fr}
+}
