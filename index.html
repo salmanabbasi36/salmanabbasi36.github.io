@@ -3,51 +3,92 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Salman Abbasi — Resume</title>
+    <title>Salman Khan — Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Resume of Salman Khan — Software Engineer" />
   </head>
   <body>
-    <main class="container">
-      <header>
-        <h1>Salman Abbasi</h1>
-        <p class="subtitle">Software Engineer · AI Enthusiast · Open Source</p>
+    <div class="site">
+      <header class="site-header">
+        <div class="wrap">
+          <div class="name">Salman Khan</div>
+          <nav class="top-nav">
+            <a href="/">Home</a>
+            <a href="resume-embed.html">PDF</a>
+            <a href="resume-replica.html">HTML</a>
+          </nav>
+        </div>
       </header>
 
-      <section class="section about">
-        <h2>About</h2>
-        <p>Minimal resume site. Add your content to this file or replace the site with your preferred static site.</p>
-      </section>
+      <main class="wrap resume">
+        <aside class="col col-left">
+          <section class="card contact">
+            <h3>Contact</h3>
+            <p>Email<br><a href="mailto:salman@example.com">salman@example.com</a></p>
+            <p>GitHub<br><a href="https://github.com/salmanabbasi36" target="_blank">@salmanabbasi36</a></p>
+            <p>Location<br>City, Country</p>
+          </section>
 
-      <section class="section work">
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            <strong>Software Engineer</strong>
-            <div class="muted">Company · 2020 — Present</div>
-            <p>Worked on web apps, automation, and machine learning projects.</p>
-          </li>
-        </ul>
-      </section>
+          <section class="card skills">
+            <h3>Skills</h3>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Docker</li>
+              <li>ML / Data</li>
+            </ul>
+          </section>
 
-      <section class="section contact">
-        <h2>Contact</h2>
-        <ul>
-          <li>Email: <a href="mailto:salman@example.com">salman@example.com</a></li>
-          <li>GitHub: <a href="https://github.com/salmanabbasi36">@salmanabbasi36</a></li>
-        </ul>
-      </section>
+          <section class="card education">
+            <h3>Education</h3>
+            <div class="muted">B.Sc. Computer Science — University</div>
+            <div class="muted">2015 — 2019</div>
+          </section>
+        </aside>
 
-      <section class="section view-resume">
-        <h2>Resume</h2>
-        <p>
-          View the original PDF or an HTML version:
-          <a href="Salman%20Khan%20Resume.pdf" target="_blank">Download PDF</a>
-          · <a href="resume-embed.html">View PDF in page</a>
-          · <a href="resume-replica.html">View as HTML</a>
-        </p>
-      </section>
+        <section class="col col-main">
+          <section class="card summary">
+            <h2>Summary</h2>
+            <p>Software engineer experienced in building production web applications, automation pipelines, and machine learning systems. Comfortable across the stack and passionate about clean, maintainable code.</p>
+          </section>
 
-      <footer class="footer">Built with ❤️ · Hosted on GitHub Pages</footer>
-    </main>
+          <section class="card experience">
+            <h2>Experience</h2>
+            <article class="job">
+              <h3>Software Engineer</h3>
+              <div class="muted">Company · 2020 — Present</div>
+              <p>Worked on core product features, performance improvements, and designed APIs used by thousands of customers.</p>
+            </article>
+
+            <article class="job">
+              <h3>Junior Engineer</h3>
+              <div class="muted">Startup · 2019 — 2020</div>
+              <p>Built web interfaces and backend tooling; helped migrate legacy systems to modern stack.</p>
+            </article>
+          </section>
+
+          <section class="card projects">
+            <h2>Selected Projects</h2>
+            <ul>
+              <li><strong>Project A</strong> — brief description and technologies used.</li>
+              <li><strong>Project B</strong> — brief description and technologies used.</li>
+            </ul>
+          </section>
+
+          <section class="actions card">
+            <a class="btn" href="Salman%20Khan%20Resume.pdf" download>Download PDF</a>
+            <a class="btn ghost" href="resume-replica.html">Edit HTML version</a>
+          </section>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap">© Salman Khan — Built with GitHub Pages</div>
+      </footer>
+    </div>
   </body>
 </html>
