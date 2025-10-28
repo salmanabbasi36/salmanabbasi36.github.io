@@ -12,83 +12,76 @@
   </head>
   <body>
     <div class="site">
-      <header class="site-header">
-        <div class="wrap">
-          <div class="name">Salman Khan</div>
-          <nav class="top-nav">
-            <a href="/">Home</a>
-            <a href="resume-embed.html">PDF</a>
-            <a href="resume-replica.html">HTML</a>
+      <main class="wrap site-grid">
+        <aside class="sidebar">
+          <div class="avatar">
+            <!-- simple avatar SVG placeholder -->
+            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="avatar">
+              <rect width="120" height="120" rx="12" fill="#eef2ff" />
+              <g transform="translate(18,18)" fill="#0b5fff">
+                <circle cx="24" cy="24" r="24" fill="#0b5fff" />
+                <rect x="0" y="56" width="48" height="28" rx="6" fill="#0b5fff" />
+              </g>
+            </svg>
+          </div>
+          <h1 class="who">Salman Khan</h1>
+          <p class="tag">Software Engineer · AI · Research</p>
+
+          <nav class="sidebar-nav">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
           </nav>
-        </div>
-      </header>
 
-      <main class="wrap resume">
-        <aside class="col col-left">
-          <section class="card contact">
-            <h3>Contact</h3>
-            <p>Email<br><a href="mailto:salman@example.com">salman@example.com</a></p>
-            <p>GitHub<br><a href="https://github.com/salmanabbasi36" target="_blank">@salmanabbasi36</a></p>
-            <p>Location<br>City, Country</p>
-          </section>
-
-          <section class="card skills">
-            <h3>Skills</h3>
-            <ul class="skill-list">
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Docker</li>
-              <li>ML / Data</li>
-            </ul>
-          </section>
-
-          <section class="card education">
-            <h3>Education</h3>
-            <div class="muted">B.Sc. Computer Science — University</div>
-            <div class="muted">2015 — 2019</div>
+          <section class="links">
+            <a href="https://github.com/salmanabbasi36" target="_blank">GitHub</a>
+            <a href="resume-replica.html">HTML Resume</a>
+            <a href="resume-embed.html">PDF</a>
           </section>
         </aside>
 
-        <section class="col col-main">
-          <section class="card summary">
-            <h2>Summary</h2>
-            <p>Software engineer experienced in building production web applications, automation pipelines, and machine learning systems. Comfortable across the stack and passionate about clean, maintainable code.</p>
+        <section class="content">
+          <section id="about" class="block">
+            <h2>About Me</h2>
+            <p>I received my degree in Computer Science and work on machine learning, web systems, and research projects. This template is inspired by an academic personal site and is editable — replace content as needed.</p>
           </section>
 
-          <section class="card experience">
-            <h2>Experience</h2>
-            <article class="job">
-              <h3>Software Engineer</h3>
-              <div class="muted">Company · 2020 — Present</div>
-              <p>Worked on core product features, performance improvements, and designed APIs used by thousands of customers.</p>
-            </article>
-
-            <article class="job">
-              <h3>Junior Engineer</h3>
-              <div class="muted">Startup · 2019 — 2020</div>
-              <p>Built web interfaces and backend tooling; helped migrate legacy systems to modern stack.</p>
-            </article>
-          </section>
-
-          <section class="card projects">
-            <h2>Selected Projects</h2>
+          <section id="research" class="block">
+            <h2>Research Interests</h2>
             <ul>
-              <li><strong>Project A</strong> — brief description and technologies used.</li>
-              <li><strong>Project B</strong> — brief description and technologies used.</li>
+              <li>Brain-Inspired Models and Efficient Learning</li>
+              <li>Spiking Neural Networks and Neuromorphic Computing</li>
+              <li>Real-Time Adaptive Robotics and World Models</li>
             </ul>
           </section>
 
-          <section class="actions card">
-            <a class="btn" href="Salman%20Khan%20Resume.pdf" download>Download PDF</a>
-            <a class="btn ghost" href="resume-replica.html">Edit HTML version</a>
+          <section id="publications" class="block">
+            <h2>Publications & Links</h2>
+            <ul>
+              <li><a href="#">Selected Publication A</a></li>
+              <li><a href="#">Selected Publication B</a></li>
+              <li><a href="#">Talks</a></li>
+            </ul>
           </section>
+
+          <section id="projects" class="block">
+            <h2>Projects</h2>
+            <ul>
+              <li><strong>Project 1</strong> — short description.</li>
+              <li><strong>Project 2</strong> — short description.</li>
+            </ul>
+          </section>
+
+          <section id="contact" class="block">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:salman@example.com">salman@example.com</a></p>
+          </section>
+
+          <footer class="foot">© 2025 Salman Khan · Built with GitHub Pages</footer>
         </section>
       </main>
-
-      <footer class="site-footer">
-        <div class="wrap">© Salman Khan — Built with GitHub Pages</div>
-      </footer>
     </div>
   </body>
 </html>

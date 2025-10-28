@@ -50,3 +50,22 @@ h1, h2, h3, h4{margin:0}
   .card{box-shadow:none;border-radius:0;padding:4px}
   .resume{grid-template-columns:1fr}
 }
+
+/* Sidebar / academic-style layout */
+.site-grid{display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:start;padding:40px}
+.sidebar{position:sticky;top:20px}
+.avatar{margin-bottom:12px}
+.who{font-size:24px;margin:0}
+.tag{color:var(--muted);margin:6px 0 14px}
+.sidebar-nav{display:flex;flex-direction:column}
+.sidebar-nav a{color:var(--accent);text-decoration:none;padding:6px 0}
+.links{margin-top:18px}
+.links a{display:block;color:var(--muted);text-decoration:none;margin:6px 0}
+.content .block{margin-bottom:26px}
+.content h2{font-size:20px;margin-bottom:8px}
+.foot{color:var(--muted);font-size:13px;margin-top:28px}
+
+@media (max-width:900px){
+  .site-grid{grid-template-columns:1fr;padding:20px}
+  .sidebar{position:static}
+}
