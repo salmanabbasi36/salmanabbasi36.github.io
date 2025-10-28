@@ -69,3 +69,15 @@ h1, h2, h3, h4{margin:0}
   .site-grid{grid-template-columns:1fr;padding:20px}
   .sidebar{position:static}
 }
+
+/* Typography refinements */
+body{line-height:1.5}
+.content p{color:#374151}
+.content ul{margin-left:18px}
+.who{font-family:'Merriweather',serif;font-weight:700}
+.content h2{font-family:'Merriweather',serif}
+.sidebar a:hover{text-decoration:underline}
+
+/* Social icons area (progressive enhancement) */
+.links a{display:inline-block;padding:6px 0}
+
