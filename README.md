@@ -5,7 +5,7 @@ This repository hosts the resume site for Salman Khan using GitHub Pages. It now
 
 - `index.html` — main site (sidebar + content). Edit content sections directly here.
 - `styles.css` — site styles and print rules.
-- `resume-replica.html` — alternate single-page resume layout you can print.
+<!-- `resume-replica.html` removed — use `index.html` and `resume-embed.html` instead. -->
 - `Salman Khan Resume.pdf` — your original PDF (kept in the repo).
 - `content.md` — a helper file with placeholders where you can paste extracted text from your PDF.
 

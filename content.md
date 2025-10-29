@@ -1,6 +1,6 @@
 # Content placeholders for your resume site
 
-This file is a convenient place to paste text extracted from your PDF resume. The template `index.html` pulls content from static HTML — paste or edit the sections below and copy them into the corresponding places in `index.html` or `resume-replica.html`.
+This file is a convenient place to paste text extracted from your PDF resume. The template `index.html` pulls content from static HTML — paste or edit the sections below and copy them into the corresponding places in `index.html`.
 
 ---
 
